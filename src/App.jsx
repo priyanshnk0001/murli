@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="header flex flex-col items-center  mt-5 bg-image">
-        <h1 className='font-bold text-4xl mb-2'>Murli & Son's caterers</h1>
+        <h1 className='font-bold text-4xl text-center mb-2'>Murli & Son's caterers</h1>
         <div className="logo-container  bg-amber-200">
           <img className='w-[130px] h-[100px]' src={`${import.meta.env.BASE_URL}murli.jpeg`} alt="" />
 
