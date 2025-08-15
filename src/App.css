@@ -23,7 +23,27 @@ body {
   margin: 0;
   padding: 5px;
   line-height: 1.6;
+  
 }
+
+.murli {
+  width: 400px;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 56px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* .bg-image {
+  background-image: url('rajkumar.jpg');
+  background-size: cover;
+  background-position: center;
+} */
+
+
 
 
 
@@ -35,6 +55,7 @@ body {
 
   h1{
     text-align: center;
+    font-size: 48px;
   }
   
   table, th, td {
@@ -44,16 +65,21 @@ body {
   li {
     padding: 0;
   }
+  .murli {
+    width: 280px;
+  }
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 507px) {
   body {
     padding: 5px;
   }
 
   h1{
     text-align: center;
+    font-size: 36px;
+    
   }
   
   table, th, td {
@@ -63,6 +89,7 @@ body {
   li {
     padding: 0px;
   }
+
 }
 
  
