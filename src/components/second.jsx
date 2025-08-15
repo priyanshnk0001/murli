@@ -22,7 +22,7 @@ function second() {
                         <tr className='w-auto px-1'>
                             <td>
                                 <ol className='list-decimal list-inside '>
-                <img className='w-full h-[90px] border-[3px]' src="nasta.jpg" alt="" />
+                                    <img className='w-full h-[90px] border-[3px]' src="nasta.jpg" alt="" />
 
                                     <li className='border border-black'>सादा बर्फी </li>
                                     <li className='border border-black'>मिल्क केक </li>
@@ -50,7 +50,7 @@ function second() {
 
                             <td>
                                 <ol className='list-decimal list-inside '>
-                <img className='w-full h-[90px] border-[3px]' src="khomcha.jpg" alt="" />
+                                    <img className='w-full h-[90px] border-[3px]' src="khomcha.jpg" alt="" />
 
                                     <li className='border border-black'>गोल गप्पे </li>
                                     <li className='border border-black'>टिक्की  </li>
@@ -77,7 +77,7 @@ function second() {
                             </td>
                             <td>
                                 <ol className='list-decimal list-inside '>
-                <img className='w-full h-[90px] border-[3px]' src="sweets.jpg" alt="" />
+                                    <img className='w-full h-[90px] border-[3px]' src="sweets.jpg" alt="" />
 
                                     <li className='border border-black'>गुलाब जामुन </li>
                                     <li className='border border-black'>रस मलाई  </li>
@@ -104,7 +104,7 @@ function second() {
                             </td>
                             <td>
                                 <ol className='list-decimal list-inside '>
-                <img className='w-full h-[90px] border-[3px]' src="bhaji-dibba.jpg" alt="" />
+                                    <img className='w-full h-[90px] border-[3px]' src="bhaji-dibba.jpg" alt="" />
 
                                     <li className='border border-black'>सादा बर्फी </li>
                                     <li className='border border-black'>डोडा बर्फी </li>

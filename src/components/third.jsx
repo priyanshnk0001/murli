@@ -22,7 +22,7 @@ function third() {
                         <tr className='w-auto px-1'>
                             <td>
                                 <ol className='list-decimal list-inside '>
-                <img className='w-full h-[90px] border-[3px]' src="drinks.jpg" alt="" />
+                                    <img className='w-full h-[90px] border-[3px]' src="drinks.jpg" alt="" />
 
                                     <li className='border border-black'>पानी  </li>
                                     <li className='border border-black'>coke कोक </li>
@@ -77,7 +77,7 @@ function third() {
                             <td>
                                 <ol className='list-decimal list-inside '>
 
-<li className='border border-black'>------ </li>
+                                    <li className='border border-black'>------ </li>
                                     <li className='border border-black'>------  </li>
                                     <li className='border border-black'>------</li>
                                     <li className='border border-black'>------</li>
@@ -103,7 +103,7 @@ function third() {
                             <td>
                                 <ol className='list-decimal list-inside '>
 
-                                   <li className='border border-black'>------ </li>
+                                    <li className='border border-black'>------ </li>
                                     <li className='border border-black'>------  </li>
                                     <li className='border border-black'>------</li>
                                     <li className='border border-black'>------</li>
