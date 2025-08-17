@@ -6,17 +6,32 @@ function App() {
 
   return (
     <>
-      <div className="header flex flex-col items-center   bg-image">
-        <h1 className='font-bold text-4xl mb-2 mt-2 text-amber-700 '>Murli & Son's caterers </h1>
-        <div className="logo-container  bg-amber-200">
+      <div className="text-center flex flex-col  w-[100%] h-[180px] border-2 bg-amber-100 border-amber-700 header ">
+        {/* <h1 className='font-bold text-4xl mb-2 mt-2 text-amber-700 '>Murli & Son's caterers </h1> */}
+       <p className='flex justify-between mx-3 text-2xl text-amber-700'><span>RajKumar</span> <span>9911907021</span></p>
+        <figure className='w-[100%] text-center flex justify-center '>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+          <h1>Murli & Son's caterers</h1>
+        </figure>
+
+
+        {/* <div className="logo-container  bg-amber-200">
           <img className='w-[130px] h-[100px] murli  ' src={`${import.meta.env.BASE_URL}murli.jpeg`} alt="" />
 
-        </div>
+        </div> */}
       </div>
 
 
       <div className="table  w-[100%]">
-        <table className=' w-[100%] mt-5 '>
+        <table className=' w-[100%] mt-2 '>
           <thead className='bg-amber-200'>
             <tr>
               <th className='border border-black'>सब्जी </th>
@@ -29,10 +44,7 @@ function App() {
             <tr className='w-auto px-1'>
               <td>
                 <ol className='list-decimal list-inside '>
-
-                  {/* <li className='border border-black'> */}
-                  <img className='w-full h-[90px] border-[3px]' src="sabji.jpg" alt="" />
-                  {/* </li> */}
+                  <img className='w-full h-[90px] border-[3px]' src="sabji.jpg"  />
                   <li className='border border-black'>शाही पनीर </li>
                   <li className='border border-black'>मटर  मशरूम </li>
                   <li className='border border-black'>मिक्स वेज </li>
