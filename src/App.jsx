@@ -1,14 +1,11 @@
-import { useState } from 'react'
+import { menuData } from './data/menuData'
 import './App.css'
 
-function App() {
-
-
+function App({ selectedItems, onToggleItem }) {
   return (
     <>
       <div className="text-center flex flex-col  w-[100%] h-[180px] border-2 bg-amber-100 border-amber-700 header ">
-        {/* <h1 className='font-bold text-4xl mb-2 mt-2 text-amber-700 '>Murli & Son's caterers </h1> */}
-       <p className='flex justify-between mx-3 text-2xl text-amber-700'><span>RajKumar</span> <span>9911907021</span></p>
+        <p className='flex justify-between mx-3 text-2xl text-amber-700'><span>RajKumar</span> <span>9911907021</span></p>
         <figure className='w-[100%] text-center flex justify-center '>
           <h1>Murli & Son's caterers</h1>
           <h1>Murli & Son's caterers</h1>
@@ -21,120 +18,41 @@ function App() {
           <h1>Murli & Son's caterers</h1>
           <h1>Murli & Son's caterers</h1>
         </figure>
-
-
-        {/* <div className="logo-container  bg-amber-200">
-          <img className='w-[130px] h-[100px] murli  ' src={`${import.meta.env.BASE_URL}murli.jpeg`} alt="" />
-
-        </div> */}
       </div>
-
 
       <div className="table  w-[100%]">
         <table className=' w-[100%] mt-2 '>
           <thead className='bg-amber-200'>
             <tr>
-              <th className='border border-black'>सब्जी </th>
-              <th className='border border-black'>पंजाबी ढाबा </th>
-              <th className='border border-black'>रोटी & तंदूर </th>
-              <th className='border border-black'>स्नैक्स </th>
+              {menuData.section1.map((col, idx) => (
+                <th key={idx} className='border border-black'>{col.title}</th>
+              ))}
             </tr>
           </thead>
           <tbody>
             <tr className='w-auto px-1'>
-              <td>
-                <ol className='list-decimal list-inside '>
-                  <img className='w-full h-[90px] border-[3px]' src="sabji.jpg"  />
-                  <li className='border border-black'>शाही पनीर </li>
-                  <li className='border border-black'>मटर  मशरूम </li>
-                  <li className='border border-black'>मिक्स वेज </li>
-                  <li className='border border-black'>मलाई कोपता </li>
-                  <li className='border border-black'>दाल मखनी </li>
-                  <li className='border border-black'>चाप </li>
-                  <li className='border border-black'>तवा सब्जी </li>
-                  <li className='border border-black'>पालक पनीर </li>
-                  <li className='border border-black'>आलू प्याज </li>
-                  <li className='border border-black'>कढ़ी पकोड़ा </li>
-                  <li className='border border-black'>पनीर भुर्जी </li>
-                  <li className='border border-black'>दम आलू </li>
-                  <li className='border border-black'>पनीर मखनी </li>
-                  <li className='border border-black'>नवरत्न कोपता </li>
-                  <li className='border border-black'>मटर पनीर  </li>
-                </ol>
-              </td>
-
-              <td>
-                <ol className='list-decimal list-inside '>
-                  <img className='w-full h-[90px] border-[3px]' src="punjabi-dhaba.jpg" alt="" />
-
-                  <li className='border border-black'>बैंगन का भरता  </li>
-                  <li className='border border-black'>दाल फ्राई  </li>
-                  <li className='border border-black'>भिंडी मसाला </li>
-                  <li className='border border-black'> राजमा छोले </li>
-                  <li className='border border-black'> पंचारण चटनी </li>
-                  <li className='border border-black'>भरमा कुलचे (देसी घी ) </li>
-                  <li className='border border-black'>------ </li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                </ol>
-              </td>
-              <td>
-                <ol className='list-decimal list-inside '>
-                  <img className='w-full h-[90px] border-[3px]' src="roti.jpg" alt="" />
-
-                  <li className='border border-black'>बटर नान  </li>
-                  <li className='border border-black'>लच्छा पराठा  </li>
-                  <li className='border border-black'>स्टफ नान </li>
-                  <li className='border border-black'> मिस्सी रोटी </li>
-                  <li className='border border-black'> सादा रोटी </li>
-                  <li className='border border-black'>onion मिस्सी रोटी </li>
-                  <li className='border border-black'>मक्का की रोटी </li>
-                  <li className='border border-black'>बथुआ की रोटी </li>
-                  <li className='border border-black'>ख़स्ता रोटी </li>
-                  <li className='border border-black'>अजवायन की पूरी </li>
-                  <li className='border border-black'>भरमा कचौड़ी </li>
-                  <li className='border border-black'>बिस्किट रोटी </li>
-                  <li className='border border-black'>------</li>
-                  <li className='border border-black'>------</li>
-                  <li className='border border-black'>------ </li>
-                </ol>
-              </td>
-              <td>
-                <ol className='list-decimal list-inside '>
-                  <img className='w-full h-[90px] border-[3px]' src="snacks.jpg" alt="" />
-
-                  <li className='border border-black'>मलाई चाप  </li>
-                  <li className='border border-black'>पनीर टिक्का </li>
-                  <li className='border border-black'>मशरूम टिक्का </li>
-                  <li className='border border-black'>चिल्ली  पनीर </li>
-                  <li className='border border-black'>मंचूरियन </li>
-                  <li className='border border-black'>चिल्ली पोटैटो </li>
-                  <li className='border border-black'>वेज सूप </li>
-                  <li className='border border-black'>हरा भरा कबाब </li>
-                  <li className='border border-black'>------ </li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                  <li className='border border-black'>-----</li>
-                </ol>
-              </td>
-
+              {menuData.section1.map((col, idx) => (
+                <td key={idx} className="align-top">
+                  <ol className='list-decimal list-inside '>
+                    <img className='w-full object-cover h-[90px] border-[3px]' src={col.image} />
+                    {col.items.map((item, itemIdx) => (
+                      <li key={itemIdx} className='border border-black flex items-center px-2 py-1 gap-2'>
+                        <input
+                          type="checkbox"
+                          checked={selectedItems.includes(item)}
+                          onChange={() => onToggleItem(item)}
+                          className="w-4 h-4 cursor-pointer"
+                        />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </td>
+              ))}
             </tr>
-
           </tbody>
         </table>
       </div>
-
-
-
     </>
   )
 }

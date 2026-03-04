@@ -1,18 +1,16 @@
-import { useState } from 'react'
+import { menuData } from '../data/menuData'
 import './third.css'
 
-function third() {
-
-
+function third({ selectedItems, onToggleItem }) {
     return (
         <>
-
-
             <div className="table  w-[100%]">
                 <table className=' w-[100%] mt-5 '>
                     <thead className='bg-amber-200'>
                         <tr>
-                            <th className='border border-black'>ड्रिंक्स </th>
+                            {menuData.section3.map((col, idx) => (
+                                <th key={idx} className='border border-black'>{col.title}</th>
+                            ))}
                             <th className='border border-black'>______</th>
                             <th className='border border-black'>______</th>
                             <th className='border border-black'>______</th>
@@ -20,123 +18,40 @@ function third() {
                     </thead>
                     <tbody>
                         <tr className='w-auto px-1'>
-                            <td>
-                                <ol className='list-decimal list-inside '>
-                                    <img className='w-full h-[90px] border-[3px]' src="drinks.jpg" alt="" />
-
-                                    <li className='border border-black'>पानी  </li>
-                                    <li className='border border-black'>coke कोक </li>
-                                    <li className='border border-black'>mirinda मिरिंडा </li>
-                                    <li className='border border-black'>fanta फैंटा </li>
-                                    <li className='border border-black'>due ड्यू </li>
-                                    <li className='border border-black'>केसर दूध </li>
-                                    <li className='border border-black'>दूध </li>
-                                    <li className='border border-black'>राबड़ी केसर दूध </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                </ol>
-                            </td>
-
-                            <td>
-                                <ol className='list-decimal list-inside '>
-
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------  </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                </ol>
-                            </td>
-                            <td>
-                                <ol className='list-decimal list-inside '>
-
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------  </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                </ol>
-                            </td>
-                            <td>
-                                <ol className='list-decimal list-inside '>
-
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------  </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------ </li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>------</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                    <li className='border border-black'>-----</li>
-                                </ol>
-                            </td>
-
+                            {menuData.section3.map((col, idx) => (
+                                <td key={idx} className="align-top">
+                                    <ol className='list-decimal list-inside '>
+                                        <img className='w-full h-[90px] border-[3px]' src={col.image} alt="" />
+                                        {col.items.map((item, itemIdx) => (
+                                            <li key={itemIdx} className='border border-black flex items-center px-2 py-1 gap-2'>
+                                                <input
+                                                    type="checkbox"
+                                                    checked={selectedItems.includes(item)}
+                                                    onChange={() => onToggleItem(item)}
+                                                    className="w-4 h-4 cursor-pointer"
+                                                />
+                                                <span>{item}</span>
+                                            </li>
+                                        ))}
+                                    </ol>
+                                </td>
+                            ))}
+                            {[1, 2, 3].map(i => (
+                                <td key={i} className="align-top">
+                                    <ol className='list-decimal list-inside '>
+                                        {Array(21).fill(0).map((_, idx) => (
+                                            <li key={idx} className='border border-black'>------</li>
+                                        ))}
+                                    </ol>
+                                </td>
+                            ))}
                         </tr>
-
                     </tbody>
                 </table>
             </div>
-
-
-
         </>
     )
 }
 
 export default third
+

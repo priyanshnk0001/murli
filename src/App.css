@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Concert+One);
 @import "tailwindcss";
 
 table td {
@@ -48,10 +49,9 @@ body {
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Concert+One);
 
 h1 {
-  animation:glow 10s ease-in-out infinite;
+  /* animation:glow 10s ease-in-out infinite; */
   
   
 
@@ -71,7 +71,7 @@ animation:none;
 
 
 figure {
-  animation:wobble 5s ease-in-out infinite;
+  /* animation:wobble 5s ease-in-out infinite; */
   transform-origin:center center;
   transform-style:preserve-3d;
 }
