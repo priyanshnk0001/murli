@@ -51,7 +51,7 @@ function Main() {
       }
 
       const encodedMessage = encodeURIComponent(message.trim());
-      const phoneNumber = "9911907021"; // Using the number from the header
+      const phoneNumber = "919911907021"; // Added country code for mobile compatibility
       window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
     });
   };

@@ -5,7 +5,7 @@ function App({ selectedItems, onToggleItem }) {
   return (
     <>
       <div className="text-center flex flex-col  w-[100%] h-[180px] border-2 bg-amber-100 border-amber-700 header ">
-        <p className='flex justify-between mx-3 text-2xl text-amber-700'><span>RajKumar</span> <span>9911907021</span></p>
+        <p className='flex justify-between mx-3 text-2xl text-amber-700'><span>RajKumar</span> <span>+91 9911907021</span></p>
         <figure className='w-[100%] text-center flex justify-center '>
           <h1>Murli & Son's caterers</h1>
           <h1>Murli & Son's caterers</h1>
